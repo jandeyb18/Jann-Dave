@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style>
+
+    <img src="logo.png" class="hello">
+
+    <style>
+        body {
+          background-image: url('FORBG.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+
+        
+     <div style="margin: 0.7in;">
+    <p>
+    <h1 style="color: white;">LOGIN PAGE</h1>
+ </p>
+    <form action="2ndpage.html" method="get">
+        <p>
+            <label for="Uname">Username:</label> <br>
+            <input required type="text" id="Uname" name="Uname" placeholder="Type your username">
+            </p>
+            
+            <p>
+                <label for="Password">Password:</label> <br>  
+                <input required type="password" id="Password" name="Password" placeholder="Type your password">
+        </p>
+
+        <p>
+    
+        <input type="submit" value="submit" onclick="alert('Thank you for logging in')">
+                    <!--Submit - confirms the values input by the user-->
+        <input type="reset" value="reset">
+    </p>
+
+    </form>
+</div>
+</body>
+</html>
