@@ -1,0 +1,48 @@
+/*Universal selector*/
+* {
+    font-family: 'Times new roman', cursive;
+    font-size: 99%;
+}
+
+.first{
+    color: red;
+}
+
+.second{
+    color: orange;
+}
+
+.third{
+    color: yellow;
+}
+
+h1{
+    font-size: 200%;
+}
+
+#h2{
+    text-transform: uppercase;
+}
+
+.color{
+    background-color: greenyellow;
+    padding-inline: 1%;
+}
+
+div + h2{
+    font-size: 150%;
+}
+
+img{
+    clip-path: circle();
+    width: 150px;
+}
+
+img ~ div{
+    letter-spacing: 0.1in;
+    margin-left: 0.5in;
+}
+
+.last_line{
+    margin-left: 2in;
+}
