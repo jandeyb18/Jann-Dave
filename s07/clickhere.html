@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clickhere.css">
+    <title>HELP?</title>
+</head>
+<body>
+        
+<main> 
+    <nav>
+
+        <!--lalagyn ko sana ng image sa gilid nga pangalan niya sa first ng lady -->
+        <h1>LADY AUGUSTRA BYRON  KING</h1>
+        <div class="navs"> <!--hindi kagroupo , may sarlining group-->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+ <!--hahatian ko siya a inag row-->
+ <!--may 3 column -->
+ <div class="article">
+    <div class="articlerow">
+        <div class="articlecolum1">
+
+         <article><!--specifies independent , self contained content.-->
+            <figure> <!--self contained like illustratins, digramns. pictures
+                code- listings-->
+                
+                    <img src="sample copy.jpg" alt="jahn dave" id="jahn"/>
+ 
+                    
+                    <figcaption id="sample copy"><!--caption for a figure element. It can 
+                    be placed as first and last child of the figure element-->
+                        Jann Dave Apohin<hr>
+                        <font size="3">KIDAPAWAN CITY, NORTH COTABATO</font>
+                    </figcaption>
+                    
+                    <div id="myModal" class="modal">
+                        <span class="close">&times</span> 
+                        <img class="modal-content" id="img01"/>
+                        <div id="caption"></div>
+                    </div> 
+
+
+
+
+            </figure>
+
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt architecto accusamus maiores sit harum corporis eius iure blanditiis qui minus suscipit quibusdam id, in cupiditate facere dolore tempora ipsum?</P>
+
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt architecto accusamus maiores sit harum corporis eius iure blanditiis qui minus suscipit quibusdam id, in cupiditate facere dolore tempora ipsum?</P>
+
+
+            </article>
+        </div>
+   
+   
+        <div class="articlecolum2">
+          <article><!--specifies independent , self contained content.-->
+            <figure> <!--self contained like illustratins, digramns. pictures
+                code- listings-->
+                
+                    <img src="sample.jpg" alt="dom" id="dom"/>
+                    
+                    <figcaption id="sample"><!--caption for a figure element. It can 
+                    be placed as first and last child of the figure element-->
+                        DOM ORPIANO  <hr>
+                       <font size="3">CORDILLERA ADMINISTRATIVE REGION</font>
+                    </figcaption>
+                    <!--  ito yung groups ng modal . so ibig nyan an man ang gagawin ko sa loob ng division na to hindi affeected yung iba -->
+
+                    <div id="myModal" class="modal">
+                        <span class="close">&times</span> 
+                        <img class="modal-content" id="img01"/>
+                        <div id="caption"></div>
+                    </div> 
+
+
+            </figure>
+
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt architecto accusamus maiores sit harum corporis eius iure blanditiis qui minus suscipit quibusdam id, in cupiditate facere dolore tempora ipsum?</P>
+
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt architecto accusamus maiores sit harum corporis eius iure blanditiis qui minus suscipit quibusdam id, in cupiditate facere dolore tempora ipsum?</P>
+        
+          </article>
+        </div>
+
+        <div class="articlecolum3">
+            <article><!--specifies independent , self contained content.-->
+              <figure> <!--self contained like illustratins, digramns. pictures
+                  code- listings-->
+                  
+                      <img src="sample copy 2.jpg" alt="carlo" id="carlo"/>
+                      
+                      <figcaption id="sample copy 2."><!--caption for a figure element. It can 
+                      be placed as first and last child of the figure element-->
+                                        carlo <hr>
+                     <font size="3">Addreess</font>
+                      </figcaption>
+                      <div id="myModal" class="modal">
+                        <span class="close">&times</span> 
+                        <img class="modal-content" id="img03"/>
+                        <div id="caption"></div>
+                    </div> 
+
+
+
+              </figure>
+  
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt architecto accusamus maiores sit harum corporis eius iure blanditiis qui minus suscipit quibusdam id, in cupiditate facere dolore tempora ipsum?</P>
+  
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt architecto accusamus maiores sit harum corporis eius iure blanditiis qui minus suscipit quibusdam id, in cupiditate facere dolore tempora ipsum?</P>
+          
+            </article>
+          </div>
+
+</div>
+</div>
+</div>
+
+
+
+            <footer>
+                <div class="footer-container">
+                <h3><a href="">Park View Road, ❤👌Ealing, London</a></h3>
+                </div>
+          
+                <div class="footerline"></div> <!--hr sana ilalagay ko kaso di gumagana kaya naglagay nalang ako footer line sa w3school nakuha sir -->
+                <small>© 2022 all right reserved | TEAM RELAX </small>
+            </footer>
+
+           
+        <main> 
+    </body>
+</html>
+
+
+<!--modal 1 jahn-->
+
+<script>
+    //step 1 : get the modal
+    var modal = document.getElementById("myModal");
+    //step 2: get the image and insert it inside the modal. use the alt text as a caption
+
+    var img = document.getElementById("jahn");
+    var modalimg =  document.getElementById("img01");
+    var captionText = document.getElementById("img01");
+
+    //initilize the yugng  img na si ada1
+
+    img.onclick = function()
+{ 
+    modal.style.display = "block";
+    modalimg.src=this.src;
+    captionText.innerHTML = this.alt;
+}
+
+
+//step3 : get the <span > element thAT CLOSES THE MODal
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+ //step4: whe the user the click on the span (x) close the modal..ito yung action na 
+
+    span.onclick = function()
+    {
+        modal.style.display = "none";
+    }
+</script>
+
+
+<!--modal for dom -->>
+<!--modal 1 jahn-->
+
+<script>
+    //step 1 : get the modal
+    var modal = document.getElementById("myModal");
+    //step 2: get the image and insert it inside the modal. use the alt text as a caption
+
+    var img = document.getElementById("dom");
+    var modalimg =  document.getElementById("img01");
+    var captionText = document.getElementById("img01");
+
+    
+
+    img.onclick = function()
+{ 
+    modal.style.display = "block";
+    modalimg.src=this.src;
+    captionText.innerHTML = this.alt;
+}
+
+
+//step3 : get the <span > element thAT CLOSES THE MODal
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+ //step4: whe the user the click on the span (x) close the modal..ito yung action na 
+
+    span.onclick = function()
+    {
+        modal.style.display = "none";
+    }
+</script>
+
+
+
+
+
+
+<script>
+    //step 1 : get the modal
+    var modal = document.getElementById("myModal");
+    //step 2: get the image and insert it inside the modal. use the alt text as a caption
+
+    var img = document.getElementById("carlo");
+    var modalimg =  document.getElementById("img01");
+    var captionText = document.getElementById("img01");
+
+    //initilize the yugng  img na si ada1
+
+    img.onclick = function()
+{ 
+    modal.style.display = "block";
+    modalimg.src=this.src;
+    captionText.innerHTML = this.alt;
+}
+
+
+//step3 : get the <span > element thAT CLOSES THE MODal
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+ //step4: whe the user the click on the span (x) close the modal..ito yung action na 
+
+    span.onclick = function()
+    {
+        modal.style.display = "none";
+    }
+</script>
+
+</body>
+</html>

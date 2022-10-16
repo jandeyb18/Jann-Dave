@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*for rersponsive*/
+    font-family: Poppines;
+    overflow: auto;
+    
+}
+
+/* one */
+#time_is_link{  
+    padding: 30px 20px;
+    cursor: pointer;
+   
+}
+
+#widget.iframe{
+
+    align-items: center;
+    width: 500px;
+}
+
+img{
+    margin: 0;
+    padding: 10 5px; 
+    border-radius: 50px;
+
+}
+
+p {
+  
+    line-height: 1.5;
+    text-align:justify ;
+  }
+
+
+  h1 + p::first-letter {
+    color: white;
+    background-color: rgb(65, 187, 218);
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 rgb(0, 38, 255);
+    font-size: 20PX;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+  }
+    
+  span{
+
+  color: rgb(36, 142, 168);
+  font-size: 24px;
+  text-decoration: underline;
+
+  }
+  
+
+  
+  main {
+    width:100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+
+}
+
+
+nav h1:hover{
+    background-color: #899697;
+    cursor: pointer;
+}
+
+
+
+nav h1{
+    margin-top: 10;
+    color: white;
+
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: #99c4c8;
+
+}
+.navs ul{
+      display: flex;
+      list-style-type: none;
+
+}
+
+.navs li a{
+        font-size: 20px;    
+        text-decoration: none;
+        color:white;
+        margin: 0 30px;/* left and right margin space. */
+        
+}       
+        
+.navs ul li a:hover{
+        background-color: rgb(146, 13, 35);
+
+}
+.main-page{
+    padding: 5%;
+}
+.row   {
+    display: flex;
+
+}
+
+.col-1{
+    flex-basis:100%;
+}
+
+.col-1  h1{
+    margin-top: 20px;
+}
+
+.col-2{
+    flex-basis:50%;
+}/*set ng  bakoran */
+
+ .col-2 img{
+    width:600px;
+    height:auto;
+    position: relative;
+    left: 30%;
+
+ }
+
+ .author{
+
+    display: flex;
+    color: blue;
+
+ }
+
+ .author p{
+    font: 20PX;
+    margin: 80px  10px 100px 1px;
+    cursor: pointer;
+ }
+ 
+ .author svg{
+    margin: 50px 30px;
+    width: 60px;
+    cursor: pointer;
+ }
+
+ footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: -20%;
+ }
+
+
+footer h3{
+    margin-bottom: 15px;
+
+}
+
+ .footerline{
+    width: 100%;
+    height: 1px;
+    background-color: BLACK;
+ }
+
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socialmedia i{
+    font-size: 25px;
+    color: blue;
+    margin: 20px;
+
+}
+
+
+#responsive
+{
+    width:100%;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition:0.3s;
+}
+#responsive:hover{
+    opacity:0.3; /*Para naman value ng images sa kapal nito,, */
+}
+/*this id for the modal background NAMAN, kung ano ang itsura ng modal */
+.modal {
+    display: none; /*hidden siya as default*/
+    position: fixed; /*stay in place lang dapat*/    
+    /*position box p to. ito yung stactk , the way it is build up*/
+    z-index: 2; /* para mag sit on top ! stack order of an elment*
+                this property works when position elements, flex are present*/
+    padding-top: 100px; /*location of the box, nagdeclare ka ng z- index*/
+    left: 0;
+    top:0;
+    width: 100%;/*full widthe modal */
+    height: 100%; /*full height modal*/
+    overflow: auto; /*Enable to scroll para needed*/
+    background-color: rgb(0, 0, 0); /*fillback color. mismatch */
+    background-color:rgb(0, 0,0,0.9) ; /*black with opacity*/
+} 
+
+
+
+/*Modal content(image)*/
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/*caption the modal image*/
+#caption{
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc; 
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*Add animation,  yung magpapakita na to , from sa word na captiion yung magdisdisplay sir*/
+.modal-content, #caption{
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 0.9s;
+    animation-name: spin;
+    animation-duration: 0.9s;
+} 
+
+
+
+/*gamiten natin si webkit sa modal*/
+/*ang webkit ay pang compatible ng browser*/
+/*di gumagana sir . zoom ang gusto pero ang spin ayaw. */
+@-webkit-keyframes spin
+{
+    from{-webkit-transform:spin(10s)}
+    to {-webkit-transform: spin(1000s);}
+}
+
+@keyframes spin
+{
+    from{
+        transform: spin(10);
+    }to{
+        transform: spin(1000s);
+    }
+    
+}
+
+/*aceess the close button */
+.close{
+    position:absolute;
+    top: 15px;
+    right: 35px;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/*sa animation nan to sir */
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*100& Image with a smaller screen para sa responsive nag image laruin lang sir kung 100% ang image sixe makukuha ang lahat ng scrren*/
+@media only screen and(max-width:700px)
+{
+    .modal-content{
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,192 @@
+*{
+    /* background-color: black; */
+    box-sizing: border-box;
+    
+   
+}
+
+
+/* body{
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    margin:0;
+    padding: 0;
+    width: 100%;
+ 
+
+}
+  */
+
+
+
+/* a{
+    color: white;
+    padding: 5px 10px 30px 100px;
+    margin: 10px 35px;
+    text-decoration: none;
+   
+
+}
+ a:hover{
+    background-color: #cfcd32;
+    cursor: cell;
+    transition: 0.3s;
+
+ }
+  */
+
+
+ 
+ 
+
+/* @media screen and  (min-width: 768px)
+and  (max-width:1023px)
+{
+    .Home{
+        position: fixed;
+        width: 100%;
+        top: 100px;
+    }
+    .About{
+        width:50%;
+        position:relative;
+        top: 100px;
+    }
+    .Business{
+        position: relative;
+        left: 1px;
+        width: 50%;
+        top: 100px;
+    }
+
+    .Contact{
+        position: relative;
+        left: 1px;
+        width: 50%;
+        top: 100px;
+    } 
+    
+    
+    
+    
+    
+    */
+
+    
+    /*
+
+    @media screen and (min-width:1024px){
+        .Home, .About, .Business, .Contact{
+            width:100%;/*sets the width to 100% when this media query
+            declaration is set
+           
+            height: 0;
+        }
+    */
+
+ 
+
+
+.Home{
+        border: solid 2px black;
+        background-color: rgb(218, 179, 26);
+        padding: 25px;
+        float: left;
+        width: 15%;
+        padding: 5px;
+        font: 20px;
+        text-align: center;
+    }
+
+.Home:hover{
+        background-color: aqua;
+        cursor: pointer;
+        
+
+    }
+
+
+.About{
+        border: solid 2px black;
+        background-color: rgb(134, 13, 13);
+        padding: 10px;
+        float: left;
+        width: 15%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .About:hover{
+        background-color:  aqua;
+        cursor:pointer;
+    }
+
+.News{
+        border: solid 2px black;
+        background-color: rgb(95, 129, 129);
+        padding: 10px;
+        float: left;
+        width: 15%;
+        padding: 5px;
+        text-align: center;
+}
+
+.News:hover{
+    background-color:  aqua;
+    cursor:pointer;
+}
+.Business{
+       
+        border: solid 2px black;
+        background-color: rgb(212, 121, 16);
+        padding: 10px;
+        float: left;
+        width: 15%;
+        padding: 5px;
+        text-align: center;
+    }
+
+
+.Business:hover{
+    background-color:aqua;
+    cursor:pointer;
+
+}
+    
+
+ .Contact{
+       
+        border: solid 2px black;
+        background-color: rgb(7, 223, 194);
+        padding: 10px;
+        float: left;
+        width: 15%;
+        padding: 5px;
+        text-align: center;
+        
+    }
+
+
+.Contact:hover{
+   cursor:pointer;
+    background-color: aqua
+}
+
+
+@media screen and (max-width:600px){
+    div .Home.About.News.Business.Contact
+    
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: bisque;
+    font-size: 8px;
+    text-align: center; 
+    justify-content: center;
+    float: left;
+    width: 100%;
+
+   }
+}
+
+  

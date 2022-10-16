@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*for rersponsive*/
+    font-family: Poppines;
+    overflow:auto;
+    
+}
+
+main {
+    width:100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+
+}
+
+nav h1{
+    color: white;
+}
+
+nav h1:hover{
+        background-color: #60acb3;
+        cursor: pointer;
+        
+    }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: #6fcbd3;
+
+}
+.navs ul{
+      display: flex;
+      list-style-type: none;
+
+}
+
+.navs li a{
+        font-size: 20px;    
+        text-decoration: none;
+        color:white;
+        margin: 0 30px;/* left and right margin space. */
+        
+}       
+        
+.navs ul li a:hover{
+        background-color: rgb(146, 13, 35);
+}
+
+.articlerow  {
+  
+    display: flex;
+
+}
+
+.articlecolum1{
+    flex-basis:50%; 
+    
+}
+
+img {
+    margin: 50px 20px;
+    padding: 10px;;
+    border-radius: 50%;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    margin: 20px ;
+    text-align: center;
+    font-size: 20px;
+}
+
+p{
+    border: none;
+    padding: 30px;
+    text-align:justify;
+}
+
+
+
+
+/*for colum 2*/
+.articlecolum2{
+    flex-basis:50%; 
+    
+}
+
+ img {
+    margin: 50px 20px;
+    padding: 10px;;
+    border-radius: 50%;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    margin: 20px ;
+    text-align: center;
+    font-size: 20px;
+}
+
+p{
+    border: none;
+    padding: 30px;
+    text-align:justify;
+}
+
+
+/*article 3 */
+.articlecolum3{
+    flex-basis:50%; 
+    
+}
+
+
+img {
+    margin: 50px 20px;
+    padding: 10px;;
+    border-radius: 50%;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    padding: 5% 0;
+    margin: 20px ;
+    text-align: center;
+    font-size: 25px;
+   
+}
+
+
+p{
+    border: none;
+    padding: 30px;
+    text-align:justify;
+}
+
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+ }
+
+
+footer h3{
+    margin-bottom: 15px;
+
+}
+
+ .footerline{
+    width: 100%;
+    height: 1px;
+    background-color: BLACK;
+ }
+ 
+
+
+
+@media screen and  (min-width: 300px)
+              and  (max-width:1024px)
+
+
+
+{    
+    
+    .main, .footerline{
+      background-color: #60acb3;
+         }
+}
+
+
+
+
+
+
+
+
+
+/*fro modal*/
+
+
+#jahn
+{
+    width:50%;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition:0.3s;
+}
+#jahn:hover{
+    opacity:0.3; /*Para naman value ng images sa kapal nito,, */
+}
+/*this id for the modal background NAMAN, kung ano ang itsura ng modal */
+.modal {
+    display: none; /*hidden siya as default*/
+    position: fixed; /*stay in place lang dapat*/    
+    /*position box p to. ito yung stactk , the way it is build up*/
+    z-index: 2; /* para mag sit on top ! stack order of an elment*
+                this property works when position elements, flex are present*/
+    padding-top: 50px; /*location of the box, nagdeclare ka ng z- index*/
+    left: 0;
+    top:0;
+    width: 100%;/*full widthe modal */
+    height: 100%; /*full height modal*/
+    overflow: auto; /*Enable to scroll para needed*/
+    background-color: rgb(0, 0, 0); /*fillback color. mismatch */
+    background-color:rgb(0, 0,0,0.9) ; /*black with opacity*/
+} 
+
+
+
+/*Modal content(image)*/
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/*caption the modal image*/
+#caption{
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc; 
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*Add animation,  yung magpapakita na to , from sa word na captiion yung magdisdisplay sir*/
+.modal-content, #caption{
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 0.9s;
+    animation-name: spin;
+    animation-duration: 0.9s;
+} 
+
+
+
+/*gamiten natin si webkit sa modal*/
+/*ang webkit ay pang compatible ng browser*/
+/*di gumagana sir . zoom ang gusto pero ang spin ayaw. */
+@-webkit-keyframes spin
+{
+    from{-webkit-transform:spin(10s)}
+    to {-webkit-transform: spin(1000s);}
+}
+
+@keyframes spin
+{
+    from{
+        transform: spin(10);
+    }to{
+        transform: spin(1000s);
+    }
+    
+}
+
+/*aceess the close button */
+.close{
+    position:absolute;
+    top: 15px;
+    right: 35px;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/*sa animation nan to sir */
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/*for modal spin- pero di gumagana  diplay animation */
+#dom
+{
+    width:50%;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition:0.3s;
+}
+#dom:hover{
+    opacity:0.3; /*Para naman value ng images sa kapal nito,, */
+}
+/*this id for the modal background NAMAN, kung ano ang itsura ng modal */
+.modal {
+    display: none; /*hidden siya as default*/
+    position: fixed; /*stay in place lang dapat*/    
+    /*position box p to. ito yung stactk , the way it is build up*/
+    z-index: 2; /* para mag sit on top ! stack order of an elment*
+                this property works when position elements, flex are present*/
+    padding-top: 100px; /*location of the box, nagdeclare ka ng z- index*/
+    left: 0;
+    top:0;
+    width: 100%;/*full widthe modal */
+    height: 100%; /*full height modal*/
+    overflow: auto; /*Enable to scroll para needed*/
+    background-color: rgb(0, 0, 0); /*fillback color. mismatch */
+    background-color:rgb(0, 0,0,0.9) ; /*black with opacity*/
+} 
+
+
+
+/*Modal content(image)*/
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/*caption the modal image*/
+#caption{
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc; 
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*Add animation,  yung magpapakita na to , from sa word na captiion yung magdisdisplay sir*/
+.modal-content, #caption{
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 0.9s;
+    animation-name: spin;
+    animation-duration: 0.9s;
+} 
+
+
+
+/*gamiten natin si webkit sa modal*/
+/*ang webkit ay pang compatible ng browser*/
+/*di gumagana sir . zoom ang gusto pero ang spin ayaw. */
+@-webkit-keyframes spin
+{
+    from{-webkit-transform:spin(10s)}
+    to {-webkit-transform: spin(1000s);}
+}
+
+@keyframes spin
+{
+    from{
+        transform: spin(10);
+    }to{
+        transform: spin(1000s);
+    }
+    
+}
+
+/*aceess the close button */
+.close{
+    position:absolute;
+    top: 15px;
+    right: 35px;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/*sa animation nan to sir */
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/*for modal spin- pero di gumagana  diplay animation */
+#carlo
+{
+    width:50%;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition:0.3s;
+}
+#carlo:hover{
+    opacity:0.3; /*Para naman value ng images sa kapal nito,, */
+}
+/*this id for the modal background NAMAN, kung ano ang itsura ng modal */
+.modal {
+    display: none; /*hidden siya as default*/
+    position: fixed; /*stay in place lang dapat*/    
+    /*position box p to. ito yung stactk , the way it is build up*/
+    z-index: 2; /* para mag sit on top ! stack order of an elment*
+                this property works when position elements, flex are present*/
+    padding-top: 50px; /*location of the box, nagdeclare ka ng z- index*/
+    left: 0;
+    top:0;
+    width: 100%;/*full widthe modal */
+    height: 100%; /*full height modal*/
+    overflow: auto; /*Enable to scroll para needed*/
+    background-color: rgb(0, 0, 0); /*fillback color. mismatch */
+    background-color:rgb(0, 0,0,0.9) ; /*black with opacity*/
+} 
+
+
+
+/*Modal content(image)*/
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/*caption the modal image*/
+#caption{
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc; 
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*Add animation,  yung magpapakita na to , from sa word na captiion yung magdisdisplay sir*/
+.modal-content, #caption{
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 0.9s;
+    animation-name: spin;
+    animation-duration: 0.9s;
+} 
+
+
+
+/*gamiten natin si webkit sa modal*/
+/*ang webkit ay pang compatible ng browser*/
+/*di gumagana sir . zoom ang gusto pero ang spin ayaw. */
+@-webkit-keyframes spin
+{
+    from{-webkit-transform:spin(10s)}
+    to {-webkit-transform: spin(1000s);}
+}
+
+@keyframes spin
+{
+    from{
+        transform: spin(10);
+    }to{
+        transform: spin(1000s);
+    }
+    
+}
+
+/*aceess the close button */
+.close{
+    position:absolute;
+    top: 15px;
+    right: 35px;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/*sa animation nan to sir */
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: progress;
+}
