@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--make sure that meta tags are included-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Introduction</title>
+
+    <!--Bootstrap CSS is linked online-->
+               <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+    
+  <!--Link on how to access the pre-defines table-->
+    <table class="table table-dark table-striped-columns">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--colored Links
+      https://getbootstrap.com/docs/5.2/helpers/colored-links/
+      -->
+
+      <!-- <a href="#" class="link-primary">Primary link</a>
+<a href="#" class="link-secondary">Secondary link</a> -->
+<a href="#" class="link-success">Success link</a>
+<!-- <a href="#" class="link-danger">Danger link</a>
+<a href="#" class="link-warning">Warning link</a>
+<a href="#" class="link-info">Info link</a>
+<a href="#" class="link-light">Light link</a>
+<a href="#" class="link-dark">Dark link</a> -->
+
+<!--background colors
+
+-->
+
+<h1>Background colors</h1>  
+<p class="p-3 mb-2 bg-secondary bg-gradient">.bg-secondary</p>
+<!--padding and margin values: highest is 5-->
+
+<p class="text-primary">.text-primary</p>
+<p class="text-secondary">.text-secondary</p>
+<p class="text-success">.text-success</p>
+<p class="text-danger">.text-danger</p>
+<p class="text-warning bg-dark">.text-warning</p>
+<p class="text-info bg-dark">.text-info</p>
+<p class="text-light bg-dark">.text-light</p>
+<p class="text-dark">.text-dark</p>
+<p class="text-body">.text-body</p>
+<p class="text-muted">.text-muted</p>
+<p class="text-white bg-dark">.text-white</p>
+<p class="text-black-50">.text-black-50</p>
+<p class="text-white-50 bg-dark">.text-white-50</p>
+
+<div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+
+<h1>Text transform</h1>
+
+<p class="text-uppercase">
+  the quick brown fox
+</p>
+
+<p class="fst-italic">
+  <!--font-italic is the previous attribute-->
+  the quick brown fox
+</p>
+
+<p class="fw-semibold">Semibold weight text.</p>
+
+<!--text-alignment-->
+
+<p class="text-center">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nesciunt quidem, blanditiis unde qui modi quibusdam, consequatur omnis corporis iusto, voluptate velit harum iste fugit iure repudiandae animi autem! Repudiandae?
+</p>
+
+<!--on the previous version, we use text-right-->
+<p class="text-end">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nesciunt quidem, blanditiis unde qui modi quibusdam, consequatur omnis corporis iusto, voluptate velit harum iste fugit iure repudiandae animi autem! Repudiandae?
+</p>
+
+<h1>testing element in span is not working</h1>
+<!-- <span class="text-center">Align this element in the center</span> 
+Text properties are not working in the span element.
+-->
+<h1>Testing a semantic element</h1> 
+<section class="text-center">using semantic element to align the text in the center</section>
+
+<!--text center vs justify
+justify no longer working in bootstrap-5
+-->
+
+<p class="text-end">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit labore nulla delectus magni asperiores neque, odio exercitationem nostrum saepe doloremque repellendus et eaque expedita veritatis provident iusto alias amet.
+</p>
+
+<p class="text-uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui vitae. Voluptate, nihil quis fugit eos deserunt at soluta doloremque. Quaerat porro nemo perferendis veritatis quibusdam et nobis beatae harum!</p>
+
+<p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sint! Provident numquam aperiam quaerat earum aliquid facere officiis perspiciatis repellendus consectetur, aut ab commodi natus voluptatibus. Maxime unde eum voluptas!</p>
+      
+<p class="fw-bolder">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus veritatis corrupti adipisci quibusdam omnis ullam ex! Deserunt quasi incidunt, impedit reiciendis dolores quisquam, earum sit atque rem dolorum cupiditate saepe!
+</p>
+
+<!--display
+Link
+https://getbootstrap.com/docs/5.2/utilities/display/
+-->
+
+<span class="d-block bg-success">using span element in display properties</span>
+
+
+<!--sizing width
+https://getbootstrap.com/docs/5.2/utilities/sizing/
+-->
+<div class="d-inline bg-primary p3">using an inline element</div>
+
+<div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+<div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+<div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+<div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+<div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+
+<!--responsive image
+https://getbootstrap.com/docs/5.2/content/images/#responsive-images
+-->
+
+<img src="hard.png" alt="liquor" height="100px" width="200px" class="img-fluid img-thumbnail mx-auto d-block h-25 w-25 float-end">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!--combination of JS: Popper and bootstrap distributon-->
+
+
+</body>
+</html>
