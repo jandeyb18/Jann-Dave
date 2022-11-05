@@ -1,0 +1,1004 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: rgb(255, 255, 253);
+
+ }
+
+
+
+video{
+    border-radius: 10px;
+    margin: auto;
+}
+ 
+.lead{
+text-align: center;
+
+} 
+
+/*-------------------------------
+backgroung naviagtion 
+-----------------------*/
+.bg{
+    background-color: rgb(0, 0, 0);
+}
+
+/*********
+navigation css mga sir 
+*************/
+.nav-items a:hover{
+width: 300px;
+border: none;
+color: white;
+background-color: rgb(225, 221, 0);
+border-radius: 4px;
+box-shadow: inset 0 0 0 0 #7b8441;
+transition: ease-out 0.3s;
+outline:none;
+}
+
+
+.nav-items a:hover{
+box-shadow: insert 100px 0 0 0 #919d14;
+cursor: pointer;
+color: black;
+}
+
+
+/*********************************************************
+css para sa sa loob lahat ng video section***************/
+
+
+.container{
+padding:0;
+max-width: 1500px;
+margin:10px auto;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+gap:10px;
+}
+
+.container .main-video-container{
+flex:1 1 900px;
+border-radius: 5px;
+box-shadow: 0 5px 15px rgba(0,0,0,.1);
+background-color: rgb(255, 255, 255);
+padding:5px;
+}
+
+.container .main-video-container .main-video{
+margin-bottom: 7px;
+border-radius: 5px;
+width: 100%;
+}
+
+.container .main-video-container .main-vid-title{
+font-size: 20px;
+color:#444;
+}
+
+.container .video-list-container{
+flex:1 1 350px;
+height: 585px;
+overflow-y: scroll;
+border-radius: 5px;
+box-shadow: 0 5px 15px rgba(0,0,0,.1);
+background-color: #fff;
+padding:15px;
+justify-content: center;
+}
+
+.container .video-list-container::-webkit-scrollbar{
+width: 10px;
+}
+
+.container .video-list-container::-webkit-scrollbar-track{
+background-color: #fff;
+border-radius: 5px;
+}
+
+.container .video-list-container::-webkit-scrollbar-thumb{
+background-color: #444;
+border-radius: 5px;
+}
+
+.container .video-list-container .list{
+display: flex;
+align-items: center;
+justify-content: center;
+gap:15px;
+padding:10px;
+background-color: #eee;
+cursor: pointer;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.container .video-list-container .list:last-child{
+margin-bottom: 0;
+}
+
+.container .video-list-container .list.active{
+background-color: #444;
+}
+
+.container .video-list-container .list.active .list-title{
+color:#fff;
+}
+
+.container .video-list-container .list .list-video{
+width: 100px;
+border-radius: 5px;
+}
+
+.container .video-list-container .list .list-title{
+font-size: 17px;
+color:#444;
+}
+
+
+
+@media (max-width:1200px){
+
+.container{
+margin:0;
+}
+
+}
+
+@media (max-width:450px){
+
+.container .main-video-container .main-vid-title{
+font-size: 15px;
+text-align: center;
+}
+
+.container .video-list-container .list{
+flex-flow: column;
+gap:10px;
+}
+
+.container .video-list-container .list .list-video{
+width: 100%;
+}
+
+.container .video-list-container .list .list-title{
+font-size: 15px;
+text-align: center;
+}
+
+}
+
+
+/*------------------------
+para sa  sa text ng p- paragraph sa class ng radiostaion
+------------------------------------------------*/
+
+.radiostation{
+
+text-align:justify;
+}
+
+
+
+/*******************************************************************************
+radiostatations po ts mga sir 
+********************************************************************************/
+
+
+.radio{
+position: relative;
+height: 100vh;
+width: 100%;
+overflow:hidden;
+
+}
+
+@media (min-width:1400px){
+
+.radio_heading{
+    font-size: 3.2rem;
+}
+}
+
+
+.radio_content{
+z-index:1;
+}
+
+
+.radios_content-width a:hover{
+
+width: 500px;
+border: yellow;
+color: rgb(0, 0, 0);
+background-color: rgb(225, 221, 0);
+border-radius: 4px;
+box-shadow: inset 0 0 0 0 #2c3302;
+transition: ease-out 0.3s;
+outline:none;
+}
+.radio_content-width a:hover{
+
+box-shadow: inset 100px 0 0 0 #919d14;
+cursor: pointer;
+color: black;
+}
+
+
+/*************************************************************************************************************************************
+                   meat the team css
+***************************************************************************************************************************************/
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #091bdf 0%,
+    #000000 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 100px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/****************************************************************************************************************************************************************************
+                TEAM CSS
+****************************************************************************************************************************************************************************/
+
+.name {
+  color: rgb(0, 0, 0);
+}
+
+
+.work {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.about {
+    text-align: justify;
+}
+
+p.description::first-letter {
+    color: #ff0000;
+    font-size: 200%;
+}
+
+
+.v-profile {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+
+
+.box {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.col-md-3 {
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+/*Animation sa  mga figure  images mga sir gamitan natin animation
+binase ko lang sa image na turo ni maam except through sa scale gamitan ntin ng zoom 
+---
+-----------------------------------------------------------*/
+figure {
+    /* width: 300px;
+    height: 200px; */
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+figure {
+position: relative;
+}
+figure::before {
+position: absolute;
+top: 0;
+left: -75%;
+z-index: 2;
+display: block;
+content: '';
+width: 50%;
+height: 100%;
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+-webkit-transform: skewX(-25deg);
+transform: skewX(-25deg);
+}
+figure:hover::before {
+-webkit-animation: shine .75s;
+animation: shine .75s;
+}
+@-webkit-keyframes shine {
+100% {
+    left: 125%;
+}
+}
+@keyframes shine {
+100% {
+    left: 125%;
+}
+}
+
+
+
+/*----------------------------------------------------------
+css and hover para sa ating image mga sir 
+------------------------------------------------------------*/
+
+
+.image {
+border: 2px solid rgb(238, 255, 0);
+width: 100%;
+height: 184px;
+overflow: hidden
+}
+
+.image img {
+width: 100%;
+height: 300;
+transition: all 2s ease-in-out
+}
+
+.image:hover img {
+transform: scale(2, 2);
+cursor: pointer
+}
+
+
+
+/*CUSTOMEr container css doon sa html */
+.container-custom{
+width:100%;
+padding: 0 5rem;
+margin:0 auto;
+
+}
+
+
+@media (min-width: 1200px){
+.container-custom{width:1140px}
+}
+
+@media (min-width: 1400px){
+.container-custom{width:1340px}
+}
+
+@media (min-width: 1600px){
+.container-custom{width:1520px}
+}
+
+
+                       /*****************************************button css mga sir ********************************************************************************/
+
+.btn{
+width: 300px;
+border: none;
+color: white;
+background-color: rgb(225, 0, 68);
+border-radius: 4px;
+box-shadow: inset 0 0 0 0 #f9e506;
+transition: ease-out 0.3s;
+font-size: 2 rem;
+outline:none;
+}
+
+
+.btn:hover{
+box-shadow: inset 100px 0 0 0 #db5609;
+cursor: pointer;
+color: black;
+}
+
+
+/* para sa clear css niya
+*/
+.btn1{
+width:300px;
+border:none;
+border: none;
+color: white;
+background-color: rgb(8, 236, 57);
+border-radius: 4px;
+box-shadow: inset 0 0 0 0 #64073d;
+transition: ease-out 0.3s;
+font-size: 2 rem;
+outline:none;
+}
+
+
+.btn1:hover{
+box-shadow: inset 100px 0 0 0 #edffe6;
+cursor: pointer;
+color: black;
+} 
+
+
+/*CSS PARA SA modaal button*/
+.btn2{
+width:100px;
+border:none;
+border:#f9e506;
+color: white;
+background-color: rgb(236, 8, 8);
+border-radius: 4px;
+box-shadow: inset 0 0 0 0 #64073d;
+transition: ease-out 0.3s;
+font-size: 12 px;
+outline:none;
+}
+
+
+.btn2:hover{
+box-shadow: inset 100px 0 0 0 #edffe6;
+cursor: pointer;
+color: black;
+} 
+
+
+
+
+
+
+/**/
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+
+
+  /********************************************************
+    css for  cards guru press cordillera
+  *************************************************************************/
+
+  .cards {
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+  }
+  .cards:hover {
+    transform: scale(1.1);
+  }
+
+  /******************************************************** *****************************************************************************
+  modal css
+  ******************************/
+  
+
+  
+  #responsive
+  {
+      width:100%;
+      height: 100%;
+      border-radius: 5px; 
+      cursor: pointer;
+      transition:0.3s;
+  }
+  #responsive:hover{
+      opacity:0.7; /*Para naman value ng images sa kapal nito,,  the lower the value ,, the more transparency it is*/
+      /*ito yung pagkablurry ng images*/
+  }
+  /*this id for the modal background, kung ano ang itsura ng modal */
+  .modal {
+      display: none; /*hidden siya as default*/
+      position: fixed; /*stay in place lang dapat*/    
+      /*position box p to. ito yung stactk , the way it is build up*/
+      z-index: 1; /* para mag sit on top ! stack order of an elment*
+                  this property works when position elements, flex are present/
+      padding-top: 100px; /*location of the box, nagdeclare ka ng z- index*/
+      left: 0;
+      top:0;
+      width: 100%;/*full widthe modal */
+      height: 100%; /*full height modal*/
+      overflow: auto; /*Enable to scroll para needed*/
+      background-color: rgb(0, 0, 0); /*fillback color. mismatch */
+      background-color:rgb(0, 0,0,0.9) ; /*black with opacity*/
+  } 
+  
+  
+  
+  /*Modal content(image)*/
+  .modal-content{
+      margin: auto;
+      display: block;
+      width: 100%;
+      max-width: 700px;
+  }
+  /*caption the modal image*/
+  #caption{
+      margin:auto;
+      display: block;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc; 
+      padding: 10px 0;
+      height: 150px;
+  }
+  
+  /*Add animation, end user like*/
+  .modal-content, #caption{
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+  } 
+  
+  
+  
+  /*gamiten natin si webkit sa modal*/
+  /*ang webkit ay pang compatible ng browser*/
+  @-webkit-keyframes zoom
+  {
+      from{-webkit-transform:scale(0)}
+      to {-webkit-transform: scale(1);}
+  }
+  
+  @keyframes zoom
+  {
+      from{
+          transform: scale(0);
+      }to{
+          transform: scale(1);
+      }
+      
+  }
+  
+  /*aceess the close button*/
+  .close{
+      position:absolute;
+      top: 15px;
+      right: 35px;
+      color:white;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+  }
+  
+  .close:hover, .close:focus{
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  /*100& Image with a smaller screen*/
+  @media only screen and(max-width:700px)
+  {
+      .modal-content{
+          width: 100%;
+      }
+  
+  
+  }
+/*end brent modal*/
+
+
+
+  /********************   modal css krizel  *****/
+#KRISTEL
+{
+    width:100%;
+    height: 100%;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition:0.3s;
+}
+#KRISTEL:hover{
+    opacity:0.7; /*Para naman value ng images sa kapal nito,,  the lower the value ,, the more transparency it is*/
+    /*ito yung pagkablurry ng images*/
+}
+/*this id for the modal background, kung ano ang itsura ng modal */
+.modal {
+    display: none; /*hidden siya as default*/
+    position: fixed; /*stay in place lang dapat*/    
+    /*position box p to. ito yung stactk , the way it is build up*/
+    z-index: 1; /* para mag sit on top ! stack order of an elment*
+                this property works when position elements, flex are present/
+    padding-top: 100px; /*location of the box, nagdeclare ka ng z- index*/
+    left: 0;
+    top:0;
+    width: 100%;/*full widthe modal */
+    height: 100%; /*full height modal*/
+    overflow: auto; /*Enable to scroll para needed*/
+    background-color: rgb(0, 0, 0); /*fillback color. mismatch */
+    background-color:rgb(0, 0,0,0.9) ; /*black with opacity*/
+} 
+
+
+
+/*Modal content(image)*/
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+/*caption the modal image*/
+#caption{
+    margin:auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc; 
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*Add animation, end user like*/
+.modal-content, #caption{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+} 
+
+
+
+/*gamiten natin si webkit sa modal*/
+/*ang webkit ay pang compatible ng browser*/
+@-webkit-keyframes zoom
+{
+    from{-webkit-transform:scale(0)}
+    to {-webkit-transform: scale(1);}
+}
+
+@keyframes zoom
+{
+    from{
+        transform: scale(0);
+    }to{
+        transform: scale(1);
+    }
+    
+}
+
+/*aceess the close button*/
+.close{
+    position:absolute;
+    top: 15px;
+    right: 35px;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*100& Image with a smaller screen*/
+@media only screen and(max-width:700px)
+{
+    .modal-content{
+        width: 100%;
+    }
+
+
+}
+/*end modal krizel*/
+
+
+/********************   modal css lea*****/
+#lea
+{
+    width:100%;
+    height: 100%;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition:0.3s;
+}
+#lea:hover{
+    opacity:0.7; /*Para naman value ng images sa kapal nito,,  the lower the value ,, the more transparency it is*/
+    /*ito yung pagkablurry ng images*/
+}
+/*this id for the modal background, kung ano ang itsura ng modal */
+.modal {
+    display: none; /*hidden siya as default*/
+    position: fixed; /*stay in place lang dapat*/    
+    /*position box p to. ito yung stactk , the way it is build up*/
+    z-index: 1; /* para mag sit on top ! stack order of an elment*
+                this property works when position elements, flex are present/
+    padding-top: 100px; /*location of the box, nagdeclare ka ng z- index*/
+    left: 0;
+    top:0;
+    width: 100%;/*full widthe modal */
+    height: 100%; /*full height modal*/
+    overflow: auto; /*Enable to scroll para needed*/
+    background-color: rgb(0, 0, 0); /*fillback color. mismatch */
+    background-color:rgb(0, 0,0,0.9) ; /*black with opacity*/
+} 
+
+
+
+/*Modal content(image)*/
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+/*caption the modal image*/
+#caption{
+    margin:auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc; 
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*Add animation, end user like*/
+.modal-content, #caption{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+} 
+
+
+
+/*gamiten natin si webkit sa modal*/
+/*ang webkit ay pang compatible ng browser*/
+@-webkit-keyframes zoom
+{
+    from{-webkit-transform:scale(0)}
+    to {-webkit-transform: scale(1);}
+}
+
+@keyframes zoom
+{
+    from{
+        transform: scale(0);
+    }to{
+        transform: scale(1);
+    }
+    
+}
+
+/*aceess the close button*/
+.close{
+    position:absolute;
+    top: 15px;
+    right: 35px;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*100& Image with a smaller screen*/
+@media only screen and(max-width:700px)
+{
+    .modal-content{
+        width: 100%;
+    }
+
+
+}
+/*end of css modal ni lea */
+
+
+
+/********************   modal css xtian  *****/
+#xtian
+{
+    width:100%;
+    height: 100%;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition:0.3s;
+}
+#xtian:hover{
+    opacity:0.7; /*Para naman value ng images sa kapal nito,,  the lower the value ,, the more transparency it is*/
+    /*ito yung pagkablurry ng images*/
+}
+/*this id for the modal background, kung ano ang itsura ng modal */
+.modal {
+    display: none; /*hidden siya as default*/
+    position: fixed; /*stay in place lang dapat*/    
+    /*position box p to. ito yung stactk , the way it is build up*/
+    z-index: 1; /* para mag sit on top ! stack order of an elment*
+                this property works when position elements, flex are present/
+    padding-top: 100px; /*location of the box, nagdeclare ka ng z- index*/
+    left: 0;
+    top:0;
+    width: 100%;/*full widthe modal */
+    height: 100%; /*full height modal*/
+    overflow: auto; /*Enable to scroll para needed*/
+    background-color: rgb(0, 0, 0); /*fillback color. mismatch */
+    background-color:rgb(0, 0,0,0.9) ; /*black with opacity*/
+} 
+
+
+
+/*Modal content(image)*/
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+/*caption the modal image*/
+#caption{
+    margin:auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc; 
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*Add animation, end user like*/
+.modal-content, #caption{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+} 
+
+
+
+/*gamiten natin si webkit sa modal*/
+/*ang webkit ay pang compatible ng browser*/
+@-webkit-keyframes zoom
+{
+    from{-webkit-transform:scale(0)}
+    to {-webkit-transform: scale(1);}
+}
+
+@keyframes zoom
+{
+    from{
+        transform: scale(0);
+    }to{
+        transform: scale(1);
+    }
+    
+}
+
+/*aceess the close button*/
+.close{
+    position:absolute;
+    top: 15px;
+    right: 35px;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*100& Image with a smaller screen*/
+@media only screen and(max-width:700px)
+{
+    .modal-content{
+        width: 100%;
+    }
+
+
+}
+/*end of css modal ni xtian */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer .border-highlight {
+border-top: 1px solid ;
+}
