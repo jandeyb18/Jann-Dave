@@ -55,43 +55,43 @@ console.log("connecterd");
 //     console.log("haler from my block");
 // }
 
-// let centimeter = prompt ("Enter your height");
+let centimeter = prompt ("Enter your height");
 
-// if (centimeter <= 150){
-//     alert ("Did not pass the minimum requirement");
-// }
-// else {
-//     alert ("Pass the minimum height requirement")
-// }
-
-let name = "Jelly Lumactud";
-console.log(name.length); //14
-//it counts the number of characters that includes space
-
-//Arrays and Objects
-let numbers = [1,54,58,60,75,90,99,]; //7
-console.log(numbers.length);
-//it displays the number of elements inside the array.
-
-//Objects inside the array
-
-let grades = [
-    {first: 90},
-    {second: 92},
-    {third: 75},
-    {fourth: 74},
-];
-
-console.log(grades.length);
-//counts the properties inside the object.
-//properties are also known as "key value pair"
-
-if (numbers.length == 7 && grades.length >= 4) {
-    console.log("from our codeblock")
+if (centimeter <= 150){
+    alert ("Did not pass the minimum requirement");
 }
-else{
-    console.log("Hindi sya belong. out sya")
+else {
+    alert ("Pass the minimum height requirement")
 }
 
-//BONUS: Ternary operator
+// let name = "Jelly Lumactud";
+// console.log(name.length); //14
+// //it counts the number of characters that includes space
+
+// //Arrays and Objects
+// let numbers = [1,54,58,60,75,90,99,]; //7
+// console.log(numbers.length);
+// //it displays the number of elements inside the array.
+
+// //Objects inside the array
+
+// let grades = [
+//     {first: 90},
+//     {second: 92},
+//     {third: 75},
+//     {fourth: 74},
+// ];
+
+// console.log(grades.length);
+// //counts the properties inside the object.
+// //properties are also known as "key value pair"
+
+// if (numbers.length == 7 && grades.length >= 4) {
+//     console.log("from our codeblock")
+// }
+// else{
+//     console.log("Hindi sya belong. out sya")
+// }
+
+// //BONUS: Ternary operator
 
