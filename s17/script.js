@@ -230,12 +230,13 @@ let days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
 
 let mapNewDays = days.map(
     function(day){
-        return day
+        return day;
     }
 );
 console.log(mapNewDays);
 
 //step 2. create a copy of a new array using forEach()
+let newDays = []
 console.log(newDays);
 days.forEach(function(day){
     newDays.push(day);
