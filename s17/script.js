@@ -242,3 +242,128 @@ days.forEach(function(day){
     newDays.push(day);
 });
 console.log(newDays);
+
+//filter - it filters out the elements based on the conditions.
+//returns an array that contains elements which passes a given condition.
+
+let digits = [1,2,3,4,5];
+let newFilter = digits.filter(
+    function(element){
+        return element < 3
+    }
+)
+console.log(newFilter);
+
+//includes
+//when checking array elements it is case sensitive
+//returning true or fales as appropriate, it returns true if a string contains a specified string, otherwise it will return false.
+//it determines whether an array includes a certain value among it entries
+
+let pets = ["Shih tzu", "Hedgehog", "Squirrel", "Rats"];
+
+// let newIncludes = pets.includes("squirrel");
+// console.log(newIncludes); //true
+
+
+// let pets = ["dogs", "cats", "birds","fishes"];
+
+// let newIncludes = pets.includes("cats");
+// console.log(newIncludes);
+
+// if (newIncludes == pets.includes){
+
+
+// console.log(newIncludes)
+// }
+// else{
+//      return `not found`
+// }
+
+//Exercise using include method
+
+function checkTheWord (word)
+{
+    if (pets.includes(word) == true)
+    {
+        return word
+    }
+    else {
+        return `${word} not found`
+    }
+}
+console.log(checkTheWord ("Squirrel"));
+console.log(checkTheWord("dogs"));
+
+//every() - checks if all elements passes a given condition
+
+console.log(digits);
+
+//returns true if all elements passed the given condition
+
+let newEvery = digits.every(
+    function (element){
+        return element > 1
+    }
+);
+
+console.log(newEvery); //false - returns a boolean
+
+//some() - checks if "at least 1 element" passes a given condition.
+//returns true even if only some of the elements passed the given condition.
+
+let newSome = digits.some(
+    function (element){
+        //element parameter represents the index in the array
+        return element > 2
+    }
+);
+
+console.log(newSome); //true - boolean
+
+//reduce() - evaluates elements from left to right and returns a "single value"
+
+let newReduce = digits.reduce(
+    function (a, b){
+        let total = a + b;
+        return total;
+    }
+);
+
+console.log(newReduce);
+//it adds all elements in an array
+
+console.log(newReduce/digits.length);//3 -it divides the total number of an array and the elements
+
+let numeric = [5,11,30,118,634];
+
+let nReduce = numeric.reduce(
+    function (a,b){
+        let tot = a+b
+        return tot
+        
+    }
+);
+console.log(nReduce/numeric.length);
+
+//Exercice 2 - using reduce method
+//Get the average of the elements in the array and display the aveage
+
+let numba = numeric.reduce(
+    function(a,b){
+        return a+b
+    }
+);
+console.log(numba); //798
+console.log(numba/numeric.length); //159.6
+
+//Stretch goal
+/*
+ The the average of the elements in the array and display the average to  your browser's console using for loop
+ */
+
+ let total = 0;
+ for (let m = 0; m < numeric.length; m++){
+    total = total + numeric[m];
+ }
+ console.log(total);
+ console.log(total/numeric.length);

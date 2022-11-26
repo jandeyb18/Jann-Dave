@@ -36,27 +36,27 @@ console.log("sipagin na sana mag aral bushes");
 // When a user inputs a valid number, it will display even or odd.
 
 //Exercise 1: Nested If
-// function oddEven(num){
-//     if (isNaN (num) || typeof parseInt (num) !== "number")
-//     {
-//         //isNaN - determines whether a values is NaN (not a number) or a number
-//         return `Unexpected Input`;
-//     }
-//     else if (num ===''){
-//         return "Please input inside the box";
-//     }
-//     else{
-//         if (num % 2 == 0)
-//         {  
-//             return ("Even Number");
-//         }
-//         else{
-//             return ("Odd Number");
-//         }
-//     }
-// }
-// let userInput = prompt ("Give me a number");
-// console.log(oddEven(userInput));
+function oddEven(num){
+    if (isNaN (num) || typeof parseInt (num) !== "number")
+    {
+        //isNaN - determines whether a values is NaN (not a number) or a number
+        return `Unexpected Input`;
+    }
+    else if (num ===''){
+        return "Please input inside the box";
+    }
+    else{
+        if (num % 2 == 0)
+        {  
+            return ("Even Number");
+        }
+        else{
+            return ("Odd Number");
+        }
+    }
+}
+let userInput = prompt ("Give me a number");
+console.log(oddEven(userInput));
 
 //NESTED LOOPS
 //A loop that is place to another loop
