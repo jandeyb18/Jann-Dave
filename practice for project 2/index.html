@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark py-4 fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+        <img class="bg" src="images/logo.png" alt="site icon">
+        <span class="text-uppercase fw-lighter ms-2">DNJ</span>
+      </a>
+      
+      <div class="order-lg-2 nav-btns">
+        <button type="button" class="btn position-relative">
+          <i class="fa fa-search"></i>
+        </button>
+
+      </div>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#header">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#collection">COLLECTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#specials">SPECIALS</a>
+          </li>
+          <li class="nav-item px-2 border-0">
+            <a class="nav-link text-white" href="#about">ABOUT US</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  
+
+  <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+    <div class="container h-100 d-flex align-items-center carousel-inner">
+      
+      <div class="text-center carousel-item active">
+        <h2 class="text-capitalize text-white">best collection of</h2>
+        <h1 class="text-uppercase py-2 fw-bold text-white">gaming laptop</h1>
+        <a href="#" class="btn mt-3 text-uppercase">shop now</a>
+      
+      </div>
+      <div class="text-center carousel-item">
+        <h2 class="text-capitalize text-white">best price of</h2>
+        <h1 class="text-uppercase py-2 fw-bold text-white">windows laptop</h1>
+        <a href="#" class="btn mt-3 text-uppercase">Shop now</a>
+        
+      </div>
+
+      <div class="text-center carousel-item">
+        <h2 class="text-capitalize text-white">Also available</h2>
+        <h1 class="text-uppercase py-2 fw-bold text-white">McOS laptop</h1>
+        <a href="#" class="btn mt-3 text-uppercase">Shop now</a>
+      </div>
+    
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+      
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </header>
+
+  <!--collection-->
+  <section id="colection" class="py-5">
+    <div class="container">
+<div class="title text-center">
+  <h2 class="position-relative d-inline-block">Our Products</h2>
+
+</div>
+
+<div class="row g-0">
+  <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+    <button type="button" class="btn m-2 text-dark " data-filter=".acer">Acer Predator</button>
+    <button type="button" class="btn m-2 text-dark " data-filter=".asus">ASUS ROG</button>
+    <button type="button" class="btn m-2 text-dark " data-filter=".msi">MSI</button>
+
+  </div>
+  
+  <div class="collection-list mt-4 row gx-0 gy-3">
+  
+    <div class="title text-center acer">
+      
+      <img src="./images/Acer-Predator-logo.jpg" class="logo" alt="">
+    
+    </div>
+
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2 acer">
+      
+      <div class="laptop-1 collection-img position-relative">
+        <img src="./images/acer predator laptop-1.jpg" class="laptop1 100" alt="">
+        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+        <div class="text-center">
+          <div class="rating mt-3">
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+          </div>
+          <p class="font1 text-capitalize my-1">Acer Predator Helios 300 PH315-55-95NS ntel® Core™ i9-12900H | GeForce RTX TM 3070Ti | 16GB DDR5 | 1TB SSD</p>
+          <span class="fw-bold">₱123,995.00</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2 acer">
+      <div class="laptop-1 collection-img position-relative">
+        <img src="./images/acer predator laptop-2.jpg" class="laptop1 w-100" alt="">
+        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+        <div class="text-center">
+          <div class="rating mt-3">
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+          </div>
+          <p class="font1 text-capitalize my-1">Gigabyte G7 KE 52PH263SH 17.3" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+          <span class="fw-bold">₱69,995.00</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2 acer">
+      <div class="laptop-1 collection-img position-relative">
+        <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+        <div class="text-center">
+          <div class="rating mt-3">
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+          </div>
+          <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+          <span class="fw-bold">₱64,995.00</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2 acer">
+      <div class="laptop-1 collection-img position-relative">
+        <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+        <div class="text-center">
+          <div class="rating mt-3">
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+          </div>
+          <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+          <span class="fw-bold">₱64,995.00</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="collection-list mt-4 row gx-0 gy-3">
+
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2 acer">
+      <div class="laptop-1 collection-img position-relative">
+        <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+        <div class="text-center">
+          <div class="rating mt-3">
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+            <span class="text-primary"><i class="fas fa-star"></i></span>
+          </div>
+          <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+          <span class="fw-bold">₱64,995.00</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 acer">
+    <div class="laptop-1 collection-img position-relative">
+      <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+      <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+      <div class="text-center">
+        <div class="rating mt-3">
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+        </div>
+        <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+        <span class="fw-bold">₱64,995.00</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 acer">
+    <div class="laptop-1 collection-img position-relative">
+      <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+      <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+      <div class="text-center">
+        <div class="rating mt-3">
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+        </div>
+        <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+        <span class="fw-bold">₱64,995.00</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 acer">
+    <div class="laptop-1 collection-img position-relative">
+      <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+      <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+      <div class="text-center">
+        <div class="rating mt-3">
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+        </div>
+        <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+        <span class="fw-bold">₱64,995.00</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!--ASUS-->
+
+ <div class="collection-list mt-4 row justify-content-center">
+  
+  <div class="title text-center asus">
+    <img src="./images/asus logo.png" class="logo asus" alt="">
+  
+  </div>
+
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 asus">
+    <div class="laptop-1 collection-img position-relative">
+      <img src="./images/acer predator laptop-1.jpg" class="laptop1 100" alt="">
+      <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+      <div class="text-center">
+        <div class="rating mt-3">
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+        </div>
+        <p class="font1 text-capitalize my-1">Acer Predator Helios 300 PH315-55-95NS ntel® Core™ i9-12900H | GeForce RTX TM 3070Ti | 16GB DDR5 | 1TB SSD</p>
+        <span class="fw-bold">₱123,995.00</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 asus">
+    <div class="laptop-1 collection-img position-relative">
+      <img src="./images/acer predator laptop-2.jpg" class="laptop1 w-100" alt="">
+      <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+      <div class="text-center">
+        <div class="rating mt-3">
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+        </div>
+        <p class="font1 text-capitalize my-1">Gigabyte G7 KE 52PH263SH 17.3" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+        <span class="fw-bold">₱69,995.00</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 asus">
+    <div class="laptop-1 collection-img position-relative">
+      <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+      <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+      <div class="text-center">
+        <div class="rating mt-3">
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+          <span class="text-primary"><i class="fas fa-star"></i></span>
+        </div>
+        <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+        <span class="fw-bold">₱64,995.00</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="collection-list mt-4 row justify-content-center">
+
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 asus">
+  <div class="laptop-1 collection-img position-relative">
+    <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+    <div class="text-center">
+      <div class="rating mt-3">
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+      </div>
+      <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+      <span class="fw-bold">₱64,995.00</span>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 asus">
+  <div class="laptop-1 collection-img position-relative">
+    <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+    <div class="text-center">
+      <div class="rating mt-3">
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+      </div>
+      <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+      <span class="fw-bold">₱64,995.00</span>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 asus">
+  <div class="laptop-1 collection-img position-relative">
+    <img src="./images/acer predator laptop-3.jpg" class="laptop1 w-100" alt="">
+    <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+    <div class="text-center">
+      <div class="rating mt-3">
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+        <span class="text-primary"><i class="fas fa-star"></i></span>
+      </div>
+      <p class="font1 text-capitalize my-1">Gigabyte G5 KE-52PH263SH 15.6" 12th Gen Intel® Core™ i5-12500H | NVIDIA® GeForce RTX™ 3060 | 8GB DDR4 | 512GB SSD</p>
+      <span class="fw-bold">₱64,995.00</span>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+</div>
+    </div>
+
+  </section>
+
+
+  <script src="js/jquery-3.6.1.js"></script>
+<!--isotope.js-->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+  <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
