@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
 
 :root{
   --lg-font: 'Kaisei Tokumin', serif;
   --sm-font: 'Poppins', sans-serif;
-  --blue: rgba(31, 104, 231, 0.59);
+  --blue: rgba(38, 38, 38, 0.59);
 }
 
 .bg{
@@ -60,6 +66,7 @@ body{
 }
 .nav-item{
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+  justify-content: right;
 }
 
 .fa{
@@ -100,11 +107,14 @@ body{
 
 /*collection*/
 .active-filter-btn{
-  background-color: var(-blue)!important;
+  background-color: var(--blue)!important;
   color: #fff!important;
   border-color: var(--blue)!important;
 }
 
+.filter-button-group .btn:hover{
+  color: #fff!important;
+}
 .collection-img span{
   top: 20px;
   right: 20px;
@@ -113,9 +123,31 @@ body{
   border-radius: 50%;
 }
 
+/*special*/
+.special-img span{
+  top: 20px;
+  right: 20px;
+}
+.special-list .btn{
+  padding: 8px 20px!important;
+}
+.special-img img{
+  transition: all 0.3s ease;
+}
+.special-img:hover img{
+  transform: scale(1.2);
+}
+
 .laptop1{
   width: 100%;
 
+}
+
+.laptop-1 img{
+  transition: all 0.3s ease;
+}
+.laptop-1:hover img{
+  transform:scale(1.2);
 }
 
 .font1{
@@ -125,12 +157,34 @@ body{
 
 .logo{
   width: 40%;
+
+}
+
+
+.card{
+  margin: 20px;
+
+}
+
+.fs{
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.fs1{
+  font-size: 25px;
+  font-style: italic;
+}
+
+.card-text{
+  text-align: justify;
 }
 
 
 /*media queries*/
 @media(min-width: 992px){
   .nav-item{
-    border-bottom: none;
+    border-bottom: none;   
   }
 }
+
