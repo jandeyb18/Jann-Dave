@@ -147,6 +147,7 @@ body{
   transition: all 0.3s ease;
 }
 .laptop-1:hover img{
+  cursor: pointer;
   transform:scale(1.2);
 }
 
@@ -180,38 +181,225 @@ body{
   text-align: justify;
 }
 
-/*newsletter*/
-#about{
-  background-color: rgba(179, 179, 179, 0.05);
+#products .title h2{
+  font-size: 60px;
+  font-weight: bold;
 }
 
-#newsletter{
-  background-color: rgba(179, 179, 179, 0.05);
+#about .title h2{
+  font-size: 60px;
+  font-weight: bold;
 }
 
-#newsletter p{
-  max-width: 600px;
+#team{
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#newsletter .input-group{
-  max-width: 500px;
+/*team*/
+
+#team .content h2 {
+  font-size: 60px;
+  font-weight: bold;
 }
 
-#newsletter .form-control{
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+.theTeam{
+  margin: 20px 40px;
 }
 
-#newsletter .btn{
-  background-color: var(--blue);
+.heading{
+  font-size: 60px;
+}
+
+.heading span { 
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.profile{
+  flex-basis: 260px;
+}
+
+.profile .profile-img{
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img{
+  filter:grayscale(0);
+}
+
+.user-name{
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.profile h5{
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify
+}
+
+.profiles .profile h3{
+  color: #ce5104;
+}
+
+/*contacts*/
+
+
+#contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact .content{
+  max-width: 800px;
+  text-align: center
+}
+
+#contact .content p{
+  color: #ce5104;
+}
+
+#contact .content h2{
+font-size: 60px;
+font-weight: bold;
+}
+
+.contactUs {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px;
+}
+
+.contactUs .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactUs .contactInfo h3{
+color: #ce5104;
+}
+
+.contactUs .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contactUs .contactInfo .box .icon{
+min-width: 60px;
+height: 60px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px
+}
+
+.contactUs .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 340;
+}
+
+.contactUs .contactInfo .box .text h3{
+  font-weight: 550;
+}
+
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+
+}
+
+contactForm h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactForm .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color: #c95b02;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100px;
+  background: #c95b02;
   color: #fff;
-  border-color: var(--blue);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
 }
 
-#newsletter .btn:hover{
-  background-color: #000;
-  border-color: #000;
-}
 
 /*footer*/
 footer .brand{
@@ -226,6 +414,12 @@ footer a{
 footer a:hover{
   color: rgb(255, 255, 255);
 }
+
+.lead{
+  font-size: 17px;
+  text-align: justify;
+}
+
 
 
 /*media queries*/
