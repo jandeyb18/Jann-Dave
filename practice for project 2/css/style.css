@@ -65,7 +65,7 @@ body{
   color: var(--blue)!important;
 }
 .nav-item{
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 0.5px solid rgba(241, 222, 222, 0.05);
   justify-content: right;
 }
 
@@ -208,7 +208,14 @@ body{
 }
 
 .theTeam{
-  margin: 20px 40px;
+  margin-right: 200px;
+  display: flex;
+  margin-left: 60px;
+}
+
+.card-body h2{
+  font-weight: bold;
+  color: #ce5104;
 }
 
 .heading{
@@ -226,11 +233,16 @@ body{
   margin: 20px;
 }
 
+.profiles .jann{
+  padding-right:  100px;
+}
+
 .profile{
   flex-basis: 260px;
 }
 
-.profile .profile-img{
+.row .profile-img{
+  justify-content: space-around;
   height: 260px;
   width: 260px;
   border-radius: 50%;
@@ -239,7 +251,7 @@ body{
   transition: 400ms;
 }
 
-.profile:hover .profile-img{
+.team:hover .profile-img{
   filter:grayscale(0);
 }
 
@@ -254,7 +266,7 @@ body{
   letter-spacing: 3px;
 }
 
-.profile p {
+.card-body p {
   font-size: 16px;
   margin-top: 20px;
   text-align: justify
@@ -420,6 +432,11 @@ footer a:hover{
   text-align: justify;
 }
 
+.links{
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
 
 
 /*media queries*/
@@ -428,4 +445,3 @@ footer a:hover{
     border-bottom: none;   
   }
 }
-
