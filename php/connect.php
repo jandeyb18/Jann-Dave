@@ -4,7 +4,7 @@
     $message = $_POST['message'];
 
     //DATABASE CONNECTION
-    $conn = new mysqli('localhost','root','','contact_form');
+    $conn = new mysqli('https://capstone-eta-two.vercel.app/','root','','contact_form');
     if($conn->connect_error){
         die('Connection Failed : '.$conn->connect_error);
 
