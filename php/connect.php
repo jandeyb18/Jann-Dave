@@ -12,7 +12,7 @@
         $stmt = $conn->prepare("insert into registration(name, email, message)values(?, ?, ?)");
         $stmt->bind_param("sss",$name, $email, $message);
         $stmt->execute();
-        echo
+        echo "Registration Successful!";
         $stmt->close();
         $conn->close();
     }
